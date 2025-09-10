@@ -61,7 +61,7 @@ pip install -r [requirements.txt]
 ### 5. Configure o banco de dados
 Certifique-se de que o arquivo dogparks.db está localizado na pasta database/. Este arquivo já está incluído no projeto.
 
-▶️ Comandos de Inicialização
+## ▶️ Comandos de Inicialização
 
 Para iniciar o servidor Flask, execute o seguinte comando na raiz do projeto:
 
