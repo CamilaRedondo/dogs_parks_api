@@ -61,28 +61,6 @@ pip install -r [requirements.txt]
 ### 5. Configure o banco de dados
 Certifique-se de que o arquivo dogparks.db está localizado na pasta database/. Este arquivo já está incluído no projeto.
 
-## ▶️ Comandos de Inicialização
-
-
-Workspace
-(executar novamente sem)
-Coletando informações do workspace
-
-Aqui está um exemplo de arquivo README.md para o seu projeto:
-
-3. Crie e ative um ambiente virtual
-Crie um ambiente virtual para isolar as dependências do projeto:
-
-Ative o ambiente virtual:
-
-Linux/MacOS:
-Windows:
-4. Instale as dependências
-Com o ambiente virtual ativado, instale as dependências listadas no arquivo requirements.txt:
-
-5. Configure o banco de dados
-Certifique-se de que o arquivo dogparks.db está localizado na pasta database/. Este arquivo já está incluído no projeto.
-
 ▶️ Comandos de Inicialização
 
 Para iniciar o servidor Flask, execute o seguinte comando na raiz do projeto:
