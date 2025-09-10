@@ -23,10 +23,21 @@ def getAllParks():
         a.postal_code,
         a.country,
         c.lat,
-        c.long
+        c.long,
+        ac.name AS access_name,
+        ac.description AS access_description,
+        pu.name AS purpose_name,
+        pu.description AS purpose_description,
+        st.name AS structure_name,
+        st.description AS structure_description
     FROM park p
     LEFT JOIN address a ON p.address = a.id
     LEFT JOIN coordinate c ON a.coordinates = c.id
+    LEFT JOIN access ac ON p.access = ac.id
+    LEFT JOIN park_purposes pp ON p.id = pp.id_park
+    LEFT JOIN purpose pu ON pp.id_purpose = pu.id
+    LEFT JOIN park_structure ps ON p.id = ps.id_park
+    LEFT JOIN structure st ON ps.id_structure = st.id
     """
 
     cursor.execute(query)
