@@ -4,7 +4,7 @@ DogParks API é uma aplicação desenvolvida em Python utilizando o framework Fl
 
 ## 🚀 Funcionalidades
 
-- Listagem de parques, endereços, finalidades, estruturas e acessos.
+- Listagem de parques, finalidades, estruturas e acessos.
 - Criação, atualização e exclusão de parques.
 - Integração com um banco de dados SQLite.
 
