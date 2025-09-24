@@ -93,11 +93,6 @@ backend/
 - PUT /parques/<id>: Atualiza um parque existente.
 - DELETE /parques/<id>: Exclui um parque.
 
-### Endereços
-- GET /enderecos/paises/: Lista todos os países.
-- GET /enderecos/estados/: Lista estados de um país.
-- GET /enderecos/cidades/: Lista cidades de um estado e país.
-
 ### Auxiliares
 - GET /aux/finalidades/: Lista finalidades.
 - GET /aux/estruturas/: Lista estruturas.
