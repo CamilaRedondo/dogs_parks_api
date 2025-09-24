@@ -66,6 +66,7 @@ Certifique-se de que o arquivo dogparks.db está localizado na pasta database/. 
 Para iniciar o servidor Flask, execute o seguinte comando na raiz do projeto:
 
 ```bash
+cd dogparks_api
 python [app.py]
 ```
 O servidor será iniciado em modo de desenvolvimento e estará disponível em http://127.0.0.1:5000.
