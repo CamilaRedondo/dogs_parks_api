@@ -77,11 +77,11 @@ backend/
 ├── database/
 │   └── dogparks.db
 ├── dogparks_api/
-│   ├── [app.py](http://_vscodecontentref_/2)
+│   ├── [app.py]
 │   ├── controllers/
 │   ├── models/
 │   └── routes/
-├── [requirements.txt](http://_vscodecontentref_/3)
+├── [requirements.txt]
 └── .gitignore
 ```
 
