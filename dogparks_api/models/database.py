@@ -26,10 +26,8 @@ def getAllParks():
         c.long,
         ac.name AS access_name,
         ac.description AS access_description,
-        pu.name AS purpose_name,
-        pu.description AS purpose_description,
-        st.name AS structure_name,
-        st.description AS structure_description
+        GROUP_CONCAT(DISTINCT pu.name) AS purposes,
+        GROUP_CONCAT(DISTINCT st.name) AS structures
     FROM park p
     LEFT JOIN address a ON p.address = a.id
     LEFT JOIN coordinate c ON a.coordinates = c.id
@@ -38,6 +36,9 @@ def getAllParks():
     LEFT JOIN purpose pu ON pp.id_purpose = pu.id
     LEFT JOIN park_structure ps ON p.id = ps.id_park
     LEFT JOIN structure st ON ps.id_structure = st.id
+    GROUP BY 
+        p.id, p.name, a.street, a.city, a.state, a.postal_code, 
+        a.country, c.lat, c.long, ac.name, ac.description
     """
 
     cursor.execute(query)
